@@ -1,0 +1,153 @@
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Segoe UI", Arial, sans-serif;
+  background: #f1f5f9;
+  color: #1e293b;
+}
+
+.app {
+  min-height: 100vh;
+}
+
+/* Header */
+.header {
+  background: linear-gradient(135deg, #0f172a, #1d4ed8);
+  color: white;
+  padding: 25px 35px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 20px;
+  flex-wrap: wrap;
+}
+
+.header-left {
+  display: flex;
+  align-items: center;
+  gap: 18px;
+}
+
+.logo {
+  font-size: 42px;
+  background: white;
+  border-radius: 12px;
+  padding: 12px;
+}
+
+.header h1 {
+  font-size: 30px;
+  letter-spacing: 2px;
+}
+
+.header-left p {
+  font-size: 12px;
+  margin-top: 6px;
+  letter-spacing: 1px;
+}
+
+.company {
+  text-align: right;
+}
+
+.company h2 {
+  font-size: 19px;
+}
+
+.company p {
+  margin-top: 5px;
+  font-size: 13px;
+  color: #bfdbfe;
+}
+
+/* Navigation */
+.navbar {
+  background: white;
+  display: flex;
+  align-items: center;
+  gap: 5px;
+  padding: 12px 20px;
+  flex-wrap: wrap;
+  box-shadow: 0 3px 10px rgba(0, 0, 0, 0.08);
+}
+
+.navbar a {
+  text-decoration: none;
+  color: #334155;
+  padding: 12px 15px;
+  border-radius: 8px;
+  font-size: 14px;
+  font-weight: 600;
+  transition: 0.2s;
+}
+
+.navbar a:hover {
+  background: #dbeafe;
+  color: #1d4ed8;
+}
+
+.navbar a.active {
+  background: #2563eb;
+  color: white;
+}
+
+/* Main Content */
+.main-content {
+  max-width: 1200px;
+  margin: 35px auto;
+  padding: 30px;
+}
+
+.main-content h2 {
+  font-size: 28px;
+  color: #0f172a;
+  margin-bottom: 10px;
+}
+
+.main-content p {
+  color: #64748b;
+  font-size: 16px;
+}
+
+.phase {
+  margin-top: 25px;
+  background: #dbeafe;
+  color: #1d4ed8;
+  padding: 16px 20px;
+  border-radius: 10px;
+  font-weight: 600;
+  border-left: 5px solid #2563eb;
+}
+
+/* Mobile Design */
+@media (max-width: 600px) {
+  .header {
+    padding: 20px;
+  }
+
+  .header h1 {
+    font-size: 23px;
+  }
+
+  .company {
+    text-align: left;
+  }
+
+  .navbar {
+    padding: 10px;
+  }
+
+  .navbar a {
+    padding: 10px;
+    font-size: 13px;
+  }
+
+  .main-content {
+    padding: 20px;
+  }
+}
